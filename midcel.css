@@ -369,7 +369,8 @@ textarea {
 }
 
 .btn {
-    padding:10px 237px;
+    padding:10px 0px;
+    width: 100%;
     border: 1px solid transparent;
     border-radius: 7px;
     font-size: 14px;
