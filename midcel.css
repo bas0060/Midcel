@@ -418,9 +418,9 @@ textarea {
     padding: 18px 10px ;
 }
 
-/* .get {
+.get {
     margin-bottom: 20px;
-} */
+}
 
 .start-back h1 {
     color: #fff;
@@ -440,7 +440,7 @@ textarea {
 .logo-about, .navgt, .cont-num, .sub {
     width: 20%;
     text-wrap: wrap;
-    padding: 40px;
+    padding: 30px;
 }
 
 .logo-about h1 {
@@ -450,7 +450,7 @@ textarea {
 
 .logo-about h1, .navgt h1, .cont-num h1, .sub h1 {
    font-size: 30px;
-   margin: 15px 0px 20px 0px;
+   margin: 10px 0px 15px 0px;
    padding: 0px 0px 15px 0px;
 }
 
