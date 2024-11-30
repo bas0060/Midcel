@@ -325,7 +325,7 @@ nav ul li a:hover:before {
 
 /* forms */
 
-.forms {
+form {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -380,6 +380,17 @@ textarea {
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
+}
+
+.btn-start:hover {
+    transform: scale(.97);
+    transition: all ease-in-out .3s ;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .arial p {
@@ -521,15 +532,6 @@ textarea {
     color: #fff;
 }
 
-.btn-start:hover {
-    transform: scale(.97);
-}
-
-.vertical-center {
-    display: table-cell;
-    vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .showcase-form input:focus  {
     outline: none;
@@ -563,7 +565,6 @@ textarea {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /* display: none; */
     background-color: #047aed;
     color: white;
     border: none;
@@ -819,3 +820,261 @@ textarea {
         height: 60px;
       }
 }
+
+/* service.html */
+.container2 {
+    max-width: 1350px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.prev-works {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.prev-works img {
+   padding: 10px;
+}
+
+.btn {
+    padding:10px 0px;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center; 
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    background-color: #047aed;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-start:hover {
+    transform: scale(.97);
+    transition: all ease-in-out .3s ;
+}
+
+.serv p, .need p {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.need {
+    padding: 20px 0;
+}
+.need h1 {
+    color: #047aed;
+    padding: 20px 0px 40px  0;
+
+}
+
+
+.our-serv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 35px 0px;
+    gap: 20px;
+}
+
+.work {
+   width: 31.33%;
+   background-color: lightgray;
+  border-radius: 10px;
+}
+
+.work img {
+    width: 95px;
+    padding: 25px 0px 15px 25px;
+}
+
+.work h2 {
+    padding: 25px 0px 20px 25px;
+    font-size: 18px;
+}
+
+.ready-talk {
+    background-image: url(./service-images/sky-blue-abstract.png);
+    height: calc(100vh - 450px);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.inn {
+    padding: 20px;
+    color: #fff;
+}
+
+.ready {
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.ready h3 {
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.talk {
+    margin: auto;
+    padding:12px 60px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    text-align: center; 
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    background-color: #fff;
+    cursor: pointer;
+    color: #047aed;
+    text-transform: uppercase;
+}
+
+.tools {
+    padding: 35px 0;
+}
+
+.tools h4 {
+    color: #047aed;
+    font-size: 1.4rem;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 1.45rem;
+    line-height: 2.2rem;
+}
+
+.tools p {
+    font-size: 1.15rem;
+    color: #0007;
+    font-size: 1.1rem;
+    width: 660px;
+    margin: auto;
+    word-spacing: 0.1rem;
+    line-height: 1.4rem;
+}
+
+.soft-tools {
+    padding-bottom: 40px;
+}
+
+.lang-frame, .MWDC {
+    display: flex;
+}
+
+.cont1, .cont2 {
+    width: 50%;
+    height:60vh;
+    background-color: lightgray;
+    padding: 28px 30px 0 33px;
+    border-top-left-radius: .45rem;
+    border-top-right-radius: .45rem;
+}
+
+.cont1 {
+    border-right: 3px solid rgba(245, 245, 245, 0.547);
+}
+
+.lang, .frame-img, .mobile, .web, .db, .cloud {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.lang h3,.frame-img h3, .mobile h3, .web h3, .db h3, .cloud h3, .blued  {
+    color: #024e99f5;
+}
+
+.choose-lang, .choose-frame, .choose-mob, .choose-web, .choose-db, .choose-cloud {
+    display: flex;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.curve {
+    border: 1px solid white;
+    padding: .85rem;
+    border-radius: 2rem;
+}
+
+.round {
+    border: 1px solid white;
+    padding: .85rem;
+    border-radius: 50%;
+}
+
+.cont3, .cont4, .cont5, .cont6 {
+    width: 25%;
+    height:60vh;
+    background-color: lightgray;
+    padding: 28px 30px 0 33px;
+    border-bottom-left-radius: .35rem;
+    border-bottom-right-radius: .45rem;
+}
+
+.cont3, .cont4, .cont5 {
+    border-right: 3px solid rgba(245, 245, 245, 0.547);
+}
+
+.cont3, .cont4, .cont5, .cont6 {
+    border-top: 3px solid rgba(245, 245, 245, 0.547);
+}
+
+.review h3 {
+    color: #047aed;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    padding-bottom: 1.3rem;
+}
+
+.review p {
+    font-size: 1.15rem;
+    color: #0007;
+    font-size: 1.1rem;
+    padding-bottom: 1.3rem;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.6rem 0;
+}
+
+.review1, .review2, .review3 {
+    background-color: lightgray;
+    padding: 1.2rem;
+    width: 33.333%;
+    padding: 1.3rem 1.3rem ;
+    border-radius: .35rem;
+}
+
+.review1 p, .review2 p, .review3 p {
+   text-align: justify;
+   word-spacing: .2rem;
+}
+
+.ask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.questions {
+    padding-bottom: 4rem;
+}
+
+.ask p {
+    font-weight: bold;
+}
+
