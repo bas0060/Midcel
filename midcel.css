@@ -643,7 +643,7 @@ textarea {
         padding: 50px;
     }
 
-    .forms {
+    form {
         width: 100%;
         flex-direction: column;
         padding: 0 20px;
@@ -651,7 +651,8 @@ textarea {
 
     .form1, .form2 {
         width: 100%;
-        
+        display: flex;
+        flex-direction: column;
     }
 
     .form2 .btn {
@@ -730,6 +731,11 @@ textarea {
 
     .start {
         padding-top: 40px;
+    }
+
+    .forms {
+        flex-direction: column;
+        width: 100%;
     }
 
     .form2 .send {
@@ -823,7 +829,7 @@ textarea {
 
 /* service.html */
 .container2 {
-    max-width: 1350px;
+    max-width: 1450px;
     margin: 0 auto;
     overflow: auto;
 }
@@ -867,12 +873,11 @@ textarea {
 .need {
     padding: 20px 0;
 }
+
 .need h1 {
     color: #047aed;
     padding: 20px 0px 40px  0;
-
 }
-
 
 .our-serv {
     display: flex;
@@ -886,7 +891,7 @@ textarea {
 .work {
    width: 31.33%;
    background-color: lightgray;
-  border-radius: 10px;
+   border-radius: 10px;
 }
 
 .work img {
@@ -900,7 +905,7 @@ textarea {
 }
 
 .ready-talk {
-    background-image: url(./service-images/sky-blue-abstract.png);
+    background-image: url(./service-images/blue-ackground.jpg);
     height: calc(100vh - 450px);
     width: 100vw;
     background-repeat: no-repeat;
@@ -909,43 +914,54 @@ textarea {
 }
 
 .inn {
+    display: flex;
+    gap: 9rem;
+    align-items: center;
     padding: 20px;
     color: #fff;
 }
 
 .ready {
-    width: 70%;
     text-transform: uppercase;
 }
 
-.ready h3 {
-    padding: 30px 0;
-    line-height: 30px;
+.ready p {
+    color: #ffffffc0;
+    font-size: 1rem;
+}
+
+.ready h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1.8rem 0;
+    line-height: 1.5rem;
 }
 
 .talk {
-    margin: auto;
-    padding:12px 60px;
+    width: 20%;
+    margin-right: 10rem;
+    padding:10px 30px;
     border: 1px solid transparent;
     border-radius: 7px;
     text-align: center; 
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
     background-color: #fff;
     cursor: pointer;
     color: #047aed;
-    text-transform: uppercase;
 }
 
 .tools {
     padding: 35px 0;
+    width: 50%;
+    margin: auto;
 }
 
 .tools h4 {
     color: #047aed;
     font-size: 1.4rem;
-    width: 400px;
     margin: auto;
     margin-bottom: 1.45rem;
     line-height: 2.2rem;
@@ -955,7 +971,6 @@ textarea {
     font-size: 1.15rem;
     color: #0007;
     font-size: 1.1rem;
-    width: 660px;
     margin: auto;
     word-spacing: 0.1rem;
     line-height: 1.4rem;
@@ -1078,3 +1093,170 @@ textarea {
     font-weight: bold;
 }
 
+.faq {
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+.faq h3 {
+    color: #0a67c3;
+    padding: 1.4rem 0;
+}
+
+.faq p {
+    color: #0007;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container2 {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .our-serv {
+        padding: 0 1rem 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ready-talk {
+        height: 0vh;
+    }
+
+    .inn {
+        flex-direction: column;
+        padding: 2rem 1.3rem;
+    }
+
+    .inn h4{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .talk {
+        width: 35%;
+        margin: auto;
+        padding: 0.4rem 5rem;
+    }
+
+    .soft-tools {
+        padding: 0 1rem 2rem;
+    }
+
+    .tools {
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+
+    .MWDC, .lang-frame {
+        flex-direction: column;
+    }
+
+    .cont1, .cont2, .cont3, .cont4, .cont5, .cont6 {
+        width: 100%;
+        height: 33vh;
+    }
+
+    .reviews {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .review1, .review2, .review3 {
+        width: 100%;
+    }
+
+    .rev {
+        display: flex;
+        padding: 1rem 0;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .other-questions {
+        padding: 1rem  1rem  0rem  1rem;
+    }
+
+    .ask p {
+        text-align: justify;
+    }
+
+    .long p {
+        width: 35rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .need h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .need p {
+        font-size: 1rem;
+    }
+
+    .inn {
+        flex-direction: column;
+    }
+
+    .ready p {
+        color: #ffffffc0;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .ready h4 {
+        margin: 0;
+        line-height: 2rem;
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+
+    .talk {
+        padding: 0.4rem 3rem;
+        width: 80%;
+    }
+
+    .curve, .round {
+        font-size: .65rem;
+    }
+
+    .cont1, .cont2, .cont6{
+        height: 60vh;
+    }
+
+    .cont3, .cont4, .cont5 {
+        height: 30vh;
+    }
+
+    .review  {
+        padding: 2rem 0;
+    }
+
+    .ask {
+        padding: 2rem 1rem;
+    }
+
+    .ask p {
+        padding: 0;
+        text-align: start;
+        font-size: .9rem;
+    }
+
+    .long p {
+        width: 15rem;
+    }
+
+}
